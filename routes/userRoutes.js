@@ -42,19 +42,6 @@ router.get('/search', (req, res) => {
 });
 
 /**
- * PUT /updateprofile
- */
-router.put('/updateprofile', (req, res) => {
-  console.log('INSIDE UPDATE PROFILE API');
-
-  // TODO: replace with real profile-update logic
-  res.status(200).json({
-    message: 'INSIDE UPDATE PROFILE API',
-    received: req.body
-  });
-});
-
-/**
  * DELETE /del
  */
 router.delete('/del', (req, res) => {
@@ -67,3 +54,16 @@ router.delete('/del', (req, res) => {
 });
 
 module.exports = router;
+
+/**
+ * PUT /updateprofile
+ */
+router.put('/updateprofile', (req, res) => {
+  console.log('INSIDE UPDATE PROFILE API');
+
+  // TODO: replace with real profile-update logic
+  res.status(200).json({
+    message: 'INSIDE UPDATE PROFILE API',
+    received: req.body
+  });
+});
